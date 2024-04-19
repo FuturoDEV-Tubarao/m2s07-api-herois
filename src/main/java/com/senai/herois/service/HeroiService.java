@@ -17,12 +17,12 @@ public class HeroiService {
 
     public Heroi inserir(Heroi heroi) {
         // logica de negocio 
-        heroiRepository.adicionar(heroi);
+        heroiRepository.save(heroi);
         return heroi;
     }
 
     public List<Heroi> consultar() {
-        return heroiRepository.consultar();
+        return heroiRepository.findAll();
     }
     
 }
